@@ -1,0 +1,103 @@
+# Healthcare Management System
+
+## Overview
+
+This project is a **Healthcare Management System** built using PHP, PDO (for database interaction), Smarty (for templating), and the AdminLTE template. It allows users to manage hospital data such as patient information, doctors, departments, and appointments.
+
+## Prerequisites
+
+Before starting, make sure you have the following installed on your system:
+
+- **PHP** (version 7 or higher)
+- **Composer** (for managing PHP dependencies)
+- **MySQL**  (for the database)
+- **XAMPP** (optional, for running the local server)
+- **AdminLTE** template (included in the project)
+
+## Installation
+
+### 1. Clone or Download the Repository
+
+Clone the repository to your local machine or download the ZIP file:
+
+```bash
+
+
+
+
+### 2 . Set Up the Database
+You have two options to set up the database:
+
+Option 1: Use the insert_default_table_data.php script:
+
+Navigate to the root directory of the project and run the following command to insert the default data into your database:
+
+php insert_default_table_data.php
+
+Option 2: Import the hospital_management.sql file:
+
+Create a new database in your MySQLserver.
+Import the hospital_management.sql file into the newly created database using a tool like phpMyAdmin or the MySQL command line.
+
+### 3. Configure Database Connection
+
+<?php
+define('DB_HOST', 'localhost');
+define('DB_USER', 'your_username');
+define('DB_PASS', 'your_password');
+define('DB_NAME', 'hospital_management');
+
+// PDO Database Connection
+try {
+    $pdo = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
+?>
+
+
+### 4. Install Dependencies
+
+Run the following command to install Composer dependencies:
+
+composer install
+
+This will install the necessary libraries and dependencies in the vendor folder.
+
+
+
+### 5. Run the Project
+You can run the project using PHP’s built-in server by executing the following command:
+
+
+php -S localhost:8000
+
+
+Alternatively, you can place the project in the htdocs directory of XAMPP:
+
+Move the project folder to C:\xampp\htdocs (or equivalent on your system).
+
+Open your browser and navigate to http://localhost/<project-folder-name>.
+
+
+File Structure
+config/ – Contains the database configuration and other configuration files.
+public/ – Stores public assets like CSS, JS, and images.
+templates/ – Contains the Smarty templates used for rendering views.
+partials/ – Includes smaller sections of reusable HTML content, such as the sidebar, cards, etc.
+insert_default_table_data.php – Script for inserting default data into the database.
+hospital_management.sql – SQL file to import the database schema and default data
+
+AdminLTE Template
+The project uses the AdminLTE template for the admin dashboard layout. The AdminLTE assets (CSS and JS files) are already included and configured in the public/assets/ directory.
+
+
+
+
+### Key Points:
+- **Clone or Download the Repository**: Clone or download the project to your local machine.
+- **Set Up the Database**: You can either use a PHP script to insert default data or manually import the SQL file.
+- **Configure Database Connection**: Update the database credentials in the configuration file.
+- **Install Dependencies**: Install all necessary dependencies via Composer.
+- **Run the Project**: Run the project locally using PHP's built-in server or XAMPP.

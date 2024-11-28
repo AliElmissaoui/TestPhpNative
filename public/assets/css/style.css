@@ -1,0 +1,109 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-body-teal{
+    background-color: #02a499;
+}
+.text-color-teal{
+    color: #02a499;
+}
+.bg-teal-clair{
+    background-color: #e1fffd;
+}
+.app-sidebar{
+    border-radius: 10px;
+}
+
+.text-bold{
+    font-weight: 900!important;
+}
+.text-size-11{
+    font-size: 11px!important;
+}
+
+.text-size-12{
+    font-size: 12px!important;
+}
+.text-size-16{
+    font-size: 1rem!important;
+}
+.sidebar-wrapper a{
+    color: #e1fffd!important;
+}
+
+.sidebar-brand .brand-text, .sidebar-brand .brand-text:hover{
+    color: #fff;
+    font-weight: bold!important;
+}
+
+.sidebar-menu .nav-link p{
+    font-size: 15px;
+}
+
+.info-box{
+    min-height: 94px;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+}
+
+.info-box .info-box-icon{
+    border-radius: 48%;
+    background-color: #e1fffd;
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+    margin-top: 5%;
+}
+.info-box .info-box-icon i{
+    color: #505050;
+}
+.info-box .info-box-number{
+    font-size: 1.5rem;
+    color: #505050!important;
+}
+.info-box .info-box-text{
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+.card-patient{
+    background-color: #e0f6ff;
+    box-shadow: unset;
+}
+.card-patient .info-box-number{
+    color: #39b5e8!important;
+}
+
+.card-room{
+    background-color: #e5f3ff;
+    box-shadow: unset;
+}
+.card-room .info-box-number{
+    color: #0c78d4!important;
+}
+
+.card-details{
+    background-color: #e1fffd;
+    box-shadow: unset;
+}
+.card-details .info-box-number{
+    color: #02a499!important;
+}
+
+.info-box .info-box-icon img{
+    border-radius: 50%;
+}
+.line-height-1{
+    line-height:1!important;
+}
+.info-box .info-box-content{
+    padding: 0;
+    padding-left: 10px;
+}
+.img-fluid{
+    height: 70%;
+}
+.fs-9{
+    font-size: 0.6rem!important;
+}

@@ -1,0 +1,8 @@
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore npm package lock file
+/composer.lock
+
+
+/templates_c
