@@ -21,7 +21,7 @@ Before starting, make sure you have the following installed on your system:
 Clone the repository to your local machine or download the ZIP file:
 
 ```bash
-
+git clone https://github.com/AliElmissaoui/TestPhpNative.git
 
 
 
